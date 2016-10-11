@@ -140,11 +140,14 @@ https://www.kernel.org/doc/Documentation/input/joystick.txt
 
 https://sourceforge.net/p/linuxconsole/code/ci/master/tree/utils/inputattach.c
 
+
 ## Linux serial tricks
 Get some programs:
 
 `sudo apt get install socat inputattach minicom`
+
 (minicom exit: ctrl-a, x, enter)
+
 ### Create two virtual serial ports linked together and test them with two terminal
 ```
 sudo socat PTY,link=/dev/ttyS10 PTY,link=/dev/ttyS11 &
