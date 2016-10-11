@@ -8,7 +8,7 @@ There can be situations, when you cannot do or use USB-HID-joystick adapter and 
 
 Orange Pi has 4 hardware serial ports (UART), which are rarely used, so one reason is simply to save USB-port(s).
 
-This page is for information how to connect some controllers to serial port. You will get /dev/input/jsX-device (joysticks and gamepads) or /dev/eventX-device (keyboards).
+This page is for information how to connect some controllers to serial port. You will get /dev/input/jsX-device (joysticks and gamepads), /dev/eventX-device (keyboard) or /dev/mouseX-device (mouse).
 
 
 ## Software
