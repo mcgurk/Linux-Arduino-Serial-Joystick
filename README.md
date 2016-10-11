@@ -144,11 +144,27 @@ https://sourceforge.net/p/linuxconsole/code/ci/master/tree/utils/inputattach.c
 Get some programs:
 
 `sudo apt get install socat inputattach minicom`
-
-### Two virtual serial ports linked together and tested with two terminal
+(minicom exit: ctrl-a, x, enter)
+### Create two virtual serial ports linked together and test them with two terminal
 ```
 sudo socat PTY,link=/dev/ttyS10 PTY,link=/dev/ttyS11 &
 sudo chmod 666 /dev/ttyS1?
 minicom -D /dev/ttyS10
 with other cosole/terminal/window: minicom -D /dev/ttyS11
 ```
+### Check what some serial device sends (e.g. for initialization)
+```
+inputattach --dump /dev/ttyS0
+```
+### Redirect existing serial port to new virtual serial port
+```
+sudo socat open:/dev/ttyACM0 PTY,link=/dev/ttyV0
+```
+### Send PS2 keyboard codes to computer through terminal
+```
+sudo socat PTY,link=/dev/ttyS10 PTY,link=/dev/ttyS11 &
+sudo chmod 666 /dev/ttyS1?
+sudo inputattach --ps2serkbd /dev/ttyS10 &
+minicom -D /dev/ttyS11
+```
+(careful! if you send example only an 'A' (0x1C), it repeats forewer without sending breakcode (0xF01C))
