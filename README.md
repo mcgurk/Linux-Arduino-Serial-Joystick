@@ -130,6 +130,6 @@ https://github.com/torvalds/linux/blob/master/drivers/input/joystick
 
 https://www.kernel.org/doc/Documentation/input/joystick.txt
 
-https://sourceforge.net/p/linuxconsole/code/ci/master/tree/utils/
+https://sourceforge.net/p/linuxconsole/code/ci/master/tree/utils/inputattach.c
 
 
