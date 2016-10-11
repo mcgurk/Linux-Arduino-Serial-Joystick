@@ -42,7 +42,7 @@ You can test it with (device number depends your another controllers):
 
 Wii Classic Controller (I²C):
 
-ESP8266: SDA = D2, SCL = D1
+ESP8266: SDA = D2 (GPIO4), SCL = D1 (GPIO5)
 
 ESP8266, Wii Classic Controller and Orange Pi GPIO's are 3.3V, so there is no need for voltage level shifting.
 
