@@ -167,4 +167,4 @@ sudo chmod 666 /dev/ttyS1?
 sudo inputattach --ps2serkbd /dev/ttyS10 &
 minicom -D /dev/ttyS11
 ```
-(careful! if you send example only an 'A' (0x1C), it repeats forewer without sending breakcode (0xF01C))
+(careful! if you send example only an 'A' (0x1C), it repeats forewer until you send breakcode (0xF01C) or kill inputattach)
