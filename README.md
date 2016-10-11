@@ -1,6 +1,26 @@
 # Linux-Arduino-Serial-Joystick
 
+Needs serport and stinger.ko -modules.
+
 https://github.com/torvalds/linux/blob/master/drivers/input/joystick/stinger.c
+
+## ESP8266
+
+Wii Classic Controller (I²C):
+
+ESP8266: SDA = D2, SCL = D1
+
+`sudo inputattach --stinger /dev/ttyUSB0 &`
+
+## Arduino
+### Notice, if you use 5V Arduino
+Remember, Orange Pi GPIO's are 3.3V. So if you gonna connect Arduino's TX to OPi, use 3.3V Arduino or do voltage level shifting.
+### Notice, if you use Arduinos USB serial port
+Many Arduinos resets when serial communication starts. When Linux driver asks for initialization, Arduino doesn't answer fast enough, because it is resetting itself. Here is some ways to overcome this: http://playground.arduino.cc/Main/DisablingAutoResetOnSerialConnection
+One software solution is to use socat. It creates new serialport device, keeps original port open and makes link between virtual and real port.
+`sudo socat open:/dev/ttyACM0 PTY,link=/dev/ttyV0`
+`sudo inputattach --stinger /dev/ttyV0 &`
+Problem is, that command must be given every time after Arduino is connected.
 
 ## Orange Pi
 
