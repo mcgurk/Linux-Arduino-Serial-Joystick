@@ -10,9 +10,12 @@ Orange Pi has 4 hardware serial ports (UART), which are rarely used, so one reas
 
 This page is for information how to connect some controllers to serial port. You will get /dev/input/jsX-device (joysticks and gamepads) or /dev/eventX-device (keyboards).
 
-Stinger_WiiClassicController.ino emulates Gravis Stinger controller. It reads 6 data bytes from Wii Classic Controller with I²C. Then it converts them to Gravis Stinger 4 data bytes and sends them through serial port (physical or USB). Linux are set up like there would be real Stinger connected to physical serial port. (analog sticks of Wii Classic Controller are disabled)
 
 ## Software
+
+### Arduino IDE
+
+Stinger_WiiClassicController.ino emulates Gravis Stinger controller. It reads 6 data bytes from Wii Classic Controller with I²C. Then it converts them to Gravis Stinger 4 data bytes and sends them through serial port (physical or USB). Linux are set up like there would be real Stinger connected to physical serial port. (analog sticks of Wii Classic Controller are disabled)
 
 ### RetrOrangePi 2.5.2
 
