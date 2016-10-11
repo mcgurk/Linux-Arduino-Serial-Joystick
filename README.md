@@ -4,6 +4,12 @@ Needs serport and stinger.ko -modules.
 
 https://github.com/torvalds/linux/blob/master/drivers/input/joystick/stinger.c
 
+From this github-page you can download stinger-module for RetrOrangePi 2.5.2.
+
+Put it `/lib/modules/3.4.112-sun8i/kernel/drivers/input/joystick/stinger.ko` and do `sudo depmod -a`. inputattach-command loads it automatically, so you don't have to start it by hand.
+
+(I have not yet tested module with clean install of ROPi)
+
 ## ESP8266
 
 Wii Classic Controller (I²C):
