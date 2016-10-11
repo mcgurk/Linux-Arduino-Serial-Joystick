@@ -18,6 +18,7 @@ This needs serport.ko and stinger.ko -modules. Serport is compiled to kernel (CO
 
 (I have not yet tested module with clean install of ROPi)
 
+Joystick-device is created with command:
 `sudo inputattach --stinger /dev/ttyUSB0 &`
 
 
