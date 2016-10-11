@@ -122,6 +122,12 @@ uart_tx = port:PA13<3><1><default><default>
 uart_rx = port:PA14<3><1><default><default>
 ```
 
+## inputattach
+
+For testing purposes you can start inputattach with dump-device:
+`inputattach --dump /dev/ttyUSB0`
+It prints out hexadesimal numbers and ascii characters of serial device.
+
 ## Links
 
 https://github.com/torvalds/linux/blob/master/drivers/input/joystick/stinger.c
