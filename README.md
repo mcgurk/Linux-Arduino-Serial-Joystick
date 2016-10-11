@@ -2,6 +2,9 @@
 
 https://github.com/torvalds/linux/blob/master/drivers/input/joystick/stinger.c
 
+## Orange Pi
+
+[koe](https://github.com/mcgurk/Linux-Arduino-Serial-Joystick/raw/master/Images/OrangePi-pinout.png)
 
 Orange Pi, 4 serial ports:
 ```
