@@ -49,7 +49,9 @@ Problem is that command must be given every time after Arduino is connected.
 
 ### Orange Pi
 
-UART0 "Debug TTL UART":
+Orange Pi have 4 hardware serialports.
+
+UART0 "Debug TTL UART" (may be in debug/terminal use):
 
 ![Orange Pi PC](https://github.com/mcgurk/Linux-Arduino-Serial-Joystick/raw/master/Images/Orange_Pi_PC.jpg)
 
