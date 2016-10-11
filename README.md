@@ -38,7 +38,7 @@ You can test it with (device number depends your another controllers):
 
 ## Hardware
 
-### ESP8266 (recommended)
+### ESP8266
 
 Wii Classic Controller (I²C):
 
