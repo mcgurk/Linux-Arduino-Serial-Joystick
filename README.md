@@ -71,7 +71,7 @@ Remember, Orange Pi GPIO's are 3.3V. So if you gonna connect Arduino's TX to OPi
 #### Notice, if you use Arduino USB serial port
 Many Arduinos resets when serial communication starts. When Linux driver asks for initialization, Arduino doesn't answer fast enough, because it is resetting itself. Here is some ways to overcome this: http://playground.arduino.cc/Main/DisablingAutoResetOnSerialConnection
 
-##### Solution 1 - iqnore linux kernel driver initializing
+##### Solution 1 - ignore linux kernel driver initializing result
 
 `sudo inputattach --stinger --always /dev/ttyACM0 &`
 
