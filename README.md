@@ -6,7 +6,7 @@ Convert (game)controller signals with Arduino or ESP8266 to Serial TTL -signal a
 ### Longer version
 There can be situations, when you cannot do or use USB-HID-joystick adapter and you still need way to use Linux with some kind of (game)controller.
 
-Orange Pi has 4 hardware serial ports (UART), so one reason is simply to save USB-port(s).
+Orange Pi has 4 hardware serial ports (UART), which are rarely used, so one reason is simply to save USB-port(s).
 
 This page is for information how to connect some controllers to serial port. You will get /dev/input/jsX-device (joysticks and gamepads) or /dev/eventX-device (keyboards).
 
