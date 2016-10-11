@@ -4,7 +4,7 @@ There can be situations, when you cannot do or use USB-HID-joystick adapter and 
 
 This page is for information how to connect some controllers to serial port. You will get /dev/input/jsX-device (joysticks and gamepads) or /dev/eventX-device (keyboards).
 
-Needs serport and stinger.ko -modules.
+Needs serport.ko and stinger.ko -modules.
 
 https://github.com/torvalds/linux/blob/master/drivers/input/joystick/stinger.c
 
