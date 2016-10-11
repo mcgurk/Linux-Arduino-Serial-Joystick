@@ -43,7 +43,7 @@ Pro Micro: SDA = D2, SCL = D3
 #### Notice, if you use 5V Arduino
 Remember, Orange Pi GPIO's are 3.3V. So if you gonna connect Arduino's TX to OPi, use 3.3V Arduino or do voltage level shifting. Wii Classic Controller is also 3.3V.
 
-#### Notice, if you use Arduinos USB serial port
+#### Notice, if you use Arduino USB serial port
 Many Arduinos resets when serial communication starts. When Linux driver asks for initialization, Arduino doesn't answer fast enough, because it is resetting itself. Here is some ways to overcome this: http://playground.arduino.cc/Main/DisablingAutoResetOnSerialConnection
 
 One software solution is to use socat. It creates new serialport device, keeps original port open and makes link between virtual and real port.
