@@ -126,4 +126,10 @@ uart_rx = port:PA14<3><1><default><default>
 
 https://github.com/torvalds/linux/blob/master/drivers/input/joystick/stinger.c
 
+https://github.com/torvalds/linux/blob/master/drivers/input/joystick
+
 https://www.kernel.org/doc/Documentation/input/joystick.txt
+
+https://sourceforge.net/p/linuxconsole/code/ci/master/tree/utils/
+
+
