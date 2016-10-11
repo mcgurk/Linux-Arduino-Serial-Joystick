@@ -77,7 +77,7 @@ One software solution is to use socat. It creates new serialport device, keeps o
 
 `sudo inputattach --stinger /dev/ttyV0 &`
 
-Problem is that command must be given every time after Arduino is connected.
+Command must be given every time after Arduino is connected.
 
 ### Orange Pi
 
