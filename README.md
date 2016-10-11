@@ -38,13 +38,24 @@ You can test it with (device number depends your another controllers):
 
 ## Hardware
 
-### ESP8266
+### ESP8266 (recommended)
 
 Wii Classic Controller (I²C):
 
 ESP8266: SDA = D2, SCL = D1
 
 ESP8266, Wii Classic Controller and Orange Pi GPIO's are 3.3V, so there is no need for voltage level shifting.
+
+#### ESP8266 with Arduino IDE
+Instructions to add ESP8266-support to Arduino IDE:
+
+https://github.com/esp8266/Arduino
+
+Short version:
+
+1. File -> Preferences -> Additional Boards Manager URLs: http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+2. Tools -> Board -> Boards manager... -> esp8266 ->  Install
 
 ### Arduino
 
