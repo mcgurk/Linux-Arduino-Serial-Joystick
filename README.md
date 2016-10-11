@@ -4,9 +4,15 @@ https://github.com/torvalds/linux/blob/master/drivers/input/joystick/stinger.c
 
 ## Orange Pi
 
+UART0 "Debug TTL UART":
+
+![Orange Pi PC](https://github.com/mcgurk/Linux-Arduino-Serial-Joystick/raw/master/Images/Orange_Pi_PC.jpg)
+
+UART1, UART2, UART3:
+
 ![Orange Pi pinout](https://github.com/mcgurk/Linux-Arduino-Serial-Joystick/raw/master/Images/OrangePi-pinout.png)
 
-Orange Pi, 4 serial ports:
+Orange Pi, activate 3 serial ports in GPIO pins:
 ```
 [uart0]
 uart_used = 1
