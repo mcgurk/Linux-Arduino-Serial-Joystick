@@ -1,6 +1,6 @@
 # Linux-Arduino-Serial-Joystick
 
-Short version: Convert (game)controller signals to Serial TTL -signal and use it in Linux like any other joystick (/dev/input/jsX).
+Short version: Convert (game)controller signals with Arduino or ESP8266 to Serial TTL -signal and use it in Linux like any other joystick (/dev/input/jsX).
 
 There can be situations, when you cannot do or use USB-HID-joystick adapter and you still need way to use Linux with some kind of (game)controller.
 
