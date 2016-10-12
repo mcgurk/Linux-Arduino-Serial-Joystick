@@ -36,12 +36,17 @@ Install inputattach:
 
 Joystick-device is created with command:
 
-`sudo inputattach --stinger /dev/ttyUSB0 &`
+`sudo inputattach --stinger /dev/ttyS1`
 
 You can test it with (device number depends your another controllers):
 
 `jstest /dev/js0`
 
+Start automatically at boot `/etc/rc.local`:
+
+`inputattach --stinger --always --daemon /dev/ttyS1`
+
+(Stinger_Playstation.ino `inputattach --baud 9600 --stinger --always --daemon /dev/ttyS1`)
 
 ## Hardware
 
