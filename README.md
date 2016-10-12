@@ -1,6 +1,6 @@
 # Linux-Arduino-Serial-Joystick
 
-If you just want easy way to connect e.g. controllers, keyboard or mouse to computer, go to https://github.com/mcgurk/Arduino-USB-HID-RetroJoystickAdapter. 
+If you just want easy way to get Arduino act like e.g. controller, keyboard or mouse to computer, go to https://github.com/mcgurk/Arduino-USB-HID-RetroJoystickAdapter. 
 
 If you can't/don't want to use USB, keep reading.
 
