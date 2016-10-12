@@ -155,6 +155,15 @@ https://www.kernel.org/doc/Documentation/input/joystick.txt
 
 https://sourceforge.net/p/linuxconsole/code/ci/master/tree/utils/inputattach.c
 
+### Orange Pi
+
+http://www.orangepi.org/Docs/OrangePiFexConfiguration.html
+
+http://linux-sunxi.org/Fex_Guide
+
+http://linux-sunxi.org/A10/PIO
+
+http://linux-sunxi.org/UART
 
 ## Linux serial tricks
 Get some programs:
@@ -188,3 +197,10 @@ minicom -D /dev/ttyS11
 (careful! if you send example only an 'A' (0x1C), it repeats forewer until you send breakcode (0xF01C) or kill inputattach)
 
 http://www.computer-engineering.org/ps2keyboard/scancodes2.html
+
+## Notice
+- ESP8266 with 1200baud makes lot of garbage to TX-pin
+- inputattach baud-parameter takes only speeds 2400, 4800, 9600, 19200, 38400
+- baud-parameter in inputattach must be given before device
+- I get inputattach to work only first time after boot with Orange Pi PC built-in UART and RetrOrangePi 2.5.2. Second time it doesn't detect any buttons (maybe some kind of interrupt problem?)
+-
