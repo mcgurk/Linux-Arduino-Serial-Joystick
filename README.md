@@ -155,6 +155,8 @@ https://www.kernel.org/doc/Documentation/input/joystick.txt
 
 https://sourceforge.net/p/linuxconsole/code/ci/master/tree/utils/inputattach.c
 
+inputattach source: https://sourceforge.net/projects/linuxconsole/files/
+
 ### Orange Pi
 
 http://www.orangepi.org/Docs/OrangePiFexConfiguration.html
@@ -201,7 +203,7 @@ http://www.computer-engineering.org/ps2keyboard/scancodes2.html
 ## Problems
 
 - ESP8266 with 1200baud makes lot of garbage to ESP8266 TX-pin - Try to avoid
-- inputattach baud-parameter takes only speeds 2400, 4800, 9600, 19200, 38400
-- inputattach doesn't support dump-device with 1200baud
+- inputattach baud-parameter takes only speeds 2400, 4800, 9600, 19200, 38400 (you can compile it yourself to support more speeds)
+- because of previous limitation, inputattach doesn't support dump-device with 1200baud
 - baud-parameter in inputattach must be given before device
 - I get inputattach to work only first time after boot with Orange Pi PC built-in UART and RetrOrangePi 2.5.2. Second time it doesn't detect any buttons (maybe some kind of interrupt problem?)
