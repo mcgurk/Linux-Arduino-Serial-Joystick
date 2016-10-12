@@ -146,9 +146,17 @@ uart_rx = port:PA14<3><1><default><default>
 
 For testing purposes you can start inputattach with dump-device:
 
-`inputattach --dump /dev/ttyUSB0`
+`inputattach --baud 9600 --dump /dev/ttyUSB0`
 
 It prints out hexadecimal numbers and ascii characters from serial device to console.
+
+--daemon : Forks into the background.
+
+--always : Ignore initialization failures when attaching the device.
+
+--noinit : Skip device initialization.
+
+--baud : Specify the baud rate to use. (This is only necessary if the default rate is incorrect.)
 
 ## Links
 
