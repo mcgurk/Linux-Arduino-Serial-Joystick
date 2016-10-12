@@ -1,5 +1,7 @@
 # Linux-Arduino-Serial-Joystick
 
+If you just want easy way to connect e.g. controllers, keyboard or mouse to computer, go to https://github.com/mcgurk/Arduino-USB-HID-RetroJoystickAdapter. If you can't/don't want to use USB, keep reading.
+
 ### Short version 
 Convert (game)controller signals with Arduino or ESP8266 to Serial TTL -signal and use it in Linux like any other joystick (/dev/input/jsX).
 
