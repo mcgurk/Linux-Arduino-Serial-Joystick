@@ -181,7 +181,7 @@ with other cosole/terminal/window: minicom -D /dev/ttyS11
 ```
 ### Check what some serial device sends (e.g. for initialization)
 ```
-inputattach --dump /dev/ttyS0
+inputattach --baud 9600 --dump /dev/ttyS0
 ```
 ### Redirect existing serial port to new virtual serial port
 ```
@@ -198,9 +198,10 @@ minicom -D /dev/ttyS11
 
 http://www.computer-engineering.org/ps2keyboard/scancodes2.html
 
-## Notice
+## Problems
 
 - ESP8266 with 1200baud makes lot of garbage to ESP8266 TX-pin - Try to avoid
 - inputattach baud-parameter takes only speeds 2400, 4800, 9600, 19200, 38400
+- inputattach doesn't support dump-device with 1200baud
 - baud-parameter in inputattach must be given before device
 - I get inputattach to work only first time after boot with Orange Pi PC built-in UART and RetrOrangePi 2.5.2. Second time it doesn't detect any buttons (maybe some kind of interrupt problem?)
