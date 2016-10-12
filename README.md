@@ -10,7 +10,7 @@ Orange Pi has 4 hardware serial ports (UART), which are rarely used, so one reas
 
 This page is for information how to connect some controllers to serial port. You will get /dev/input/jsX-device (joysticks and gamepads), /dev/eventX-device (keyboard) or /dev/mouseX-device (mouse).
 
-Look ma! I'm driving without USB! (about $3 wemos ESP8266 and Wii Classic Controller with Orange Pi PC)
+Look ma! I'm driving without USB! (about $3 Wemos ESP8266 and Wii Classic Controller with Orange Pi PC)
 
 ![example](https://raw.githubusercontent.com/mcgurk/Linux-Arduino-Serial-Joystick/master/Images/SerialJoystick_example.jpg)
 
