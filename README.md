@@ -46,8 +46,6 @@ Start automatically at boot `/etc/rc.local`:
 
 `inputattach --baud 9600 --always --stinger --daemon /dev/ttyS1`
 
-(Stinger_Playstation.ino `inputattach --baud 9600 --stinger --always --daemon /dev/ttyS1`)
-
 ## Hardware
 
 ### ESP8266
