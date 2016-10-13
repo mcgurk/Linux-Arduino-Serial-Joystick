@@ -27,6 +27,7 @@
 #define BRT !bitRead(data[1], 3) /* right trigger */
 
 inline void translateState(uint8_t *data, uint8_t *state) {
+  //https://github.com/torvalds/linux/blob/master/drivers/input/joystick/stinger.c
   state[0] = 0; state[1] = 0; state[2] = 0; state[3] = 0;
   if (BA) bitSet(state[0], 5);  //a 
   if (BB) bitSet(state[0], 4);  //b
