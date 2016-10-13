@@ -36,7 +36,7 @@ Install inputattach:
 
 Joystick-device is created with command:
 
-`sudo inputattach --stinger /dev/ttyS1`
+`sudo inputattach --baud 9600 --always --stinger /dev/ttyS1`
 
 You can test it with (device number depends your another controllers):
 
@@ -44,7 +44,7 @@ You can test it with (device number depends your another controllers):
 
 Start automatically at boot `/etc/rc.local`:
 
-`inputattach --stinger --always --daemon /dev/ttyS1`
+`inputattach --baud 9600 --always --stinger --daemon /dev/ttyS1`
 
 (Stinger_Playstation.ino `inputattach --baud 9600 --stinger --always --daemon /dev/ttyS1`)
 
@@ -83,16 +83,16 @@ Remember, Orange Pi GPIO's are 3.3V. So if you gonna connect Arduino's TX to OPi
 #### Notice, if you use Arduino USB serial port
 Many Arduinos resets when serial communication starts. When Linux driver asks for initialization, Arduino doesn't answer fast enough, because it is resetting itself.
 
-##### Solution 1 - ignore linux kernel driver initializing result
+##### Solution 1 - ignore linux kernel driver initializing result with --always parameter
 
-`sudo inputattach --stinger --always /dev/ttyACM0 &`
+`sudo inputattach --baud 9600 --always --stinger /dev/ttyACM0 &`
 
 ##### Solution 2 - keep serial connection open
 One software solution is to use socat. It creates new serialport device, keeps original port open and makes link between virtual and real port.
 
 `sudo socat open:/dev/ttyACM0 PTY,link=/dev/ttyV0`
 
-`sudo inputattach --stinger /dev/ttyV0 &`
+`sudo inputattach --baud 9600 --stinger /dev/ttyV0 &`
 
 Command must be given every time after Arduino is connected.
 
