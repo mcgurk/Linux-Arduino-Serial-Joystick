@@ -83,6 +83,7 @@ public:
     data[4] = 127;
     data[5] = 127;
     memcpy(olddata, data, JOYSTICK_DATA_SIZE);
+    translateState(data, state);
     sendState(1);
   }
 
