@@ -62,13 +62,12 @@ inline void translateState(uint8_t *data, uint8_t *state) {
 //  Joystick (Gamepad)
 
 
-uint8_t state[JOYSTICK_STATE_SIZE];
-
 class Joystick_ {
 
 private:
   uint8_t joystickId;
   uint8_t olddata[JOYSTICK_DATA_SIZE];
+  uint8_t state[JOYSTICK_STATE_SIZE];
   uint8_t flag;
 
 public:
